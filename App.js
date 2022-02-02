@@ -14,12 +14,27 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import {SignIn, SignUp, NamePet, Home, Station, Craft} from './screens';
-import {Image, NativeBaseProvider} from 'native-base';
 import {BottomNavbar} from './CustomNavigator';
+
+import firebase from '@react-native-firebase/app';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
+const firebaseConfig = {
+  apiKey: 'AIzaSyBFOcVQ-Js2lW7m8lMItqH4QdDGsmg4kqM',
+  authDomain: 'balarunta-v2.firebaseapp.com',
+  databaseURL: 'https://balarunta-v2.firebaseio.com',
+  projectId: 'balarunta-v2',
+  storageBucket: 'balarunta-v2.appspot.com',
+  messagingSenderId: '1069689751901',
+  appId: '1:1069689751901:web:6e0ebd82f47444d5d0c0b4',
+  measurementId: 'G-KRJ1VPLJ7Q',
+};
+
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
 const App = () => {
   return (
     <NavigationContainer>
@@ -52,38 +67,3 @@ const App = () => {
 };
 
 export default App;
-
-// const Tab = createBottomTabNavigator();
-// const profile_inactive = require('./assets/icon_profile_inactive.png');
-// const station_inactive = require('./assets/icon_station_inactive.png');
-
-// export default function App() {
-//   return (
-//     <NativeBaseProvider>
-//       <NavigationContainer>
-//         <Tab.Navigator screenOptions={{headerShown: false}}>
-//           <Tab.Screen
-//             name="Home"
-//             component={Home}
-//             options={{
-//               tabBarIcon: ({size, color}) => (
-//                 <Image source={profile_inactive} size={size} color={color} />
-//               ),
-//               headerShown: false,
-//             }}
-//           />
-//           <Tab.Screen
-//             name="Settings"
-//             component={Station}
-//             options={{
-//               tabBarIcon: ({size, color}) => (
-//                 <Image source={station_inactive} size={size} color={color} />
-//               ),
-//               headerShown: false,
-//             }}
-//           />
-//         </Tab.Navigator>
-//       </NavigationContainer>
-//     </NativeBaseProvider>
-//   );
-// }

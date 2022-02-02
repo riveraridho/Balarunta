@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "1069689751901",
+    "firebase_url": "https://balarunta-v2.firebaseio.com",
+    "project_id": "balarunta-v2",
+    "storage_bucket": "balarunta-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069689751901:android:ae10b87e94e43251d0c0b4",
+        "android_client_info": {
+          "package_name": "com.LitterAlly.Balarunta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069689751901-h3tju88kalcjf5657q1hm8mi6jagi44c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWKZKlrQUP4Abx7z-xTL7fJi8NBrbg838"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069689751901-h3tju88kalcjf5657q1hm8mi6jagi44c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1069689751901-ge8o22qvhh09jf4k786ktjm4ijslc5iu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.LitterAlly.Balarunta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069689751901:android:63e8d668a70799a7d0c0b4",
+        "android_client_info": {
+          "package_name": "com.Litterally.BalaruntaAdmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069689751901-dm8n31drtm9e6a5crlclbbkvtj5rptml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Litterally.BalaruntaAdmin",
+            "certificate_hash": "7a21fce5646b230f5d937e77446c01c6ec544d57"
+          }
+        },
+        {
+          "client_id": "1069689751901-h3tju88kalcjf5657q1hm8mi6jagi44c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWKZKlrQUP4Abx7z-xTL7fJi8NBrbg838"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069689751901-h3tju88kalcjf5657q1hm8mi6jagi44c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1069689751901-ge8o22qvhh09jf4k786ktjm4ijslc5iu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.LitterAlly.Balarunta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069689751901:android:be7daf6326a05d7cd0c0b4",
+        "android_client_info": {
+          "package_name": "com.balarunta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069689751901-080mskbi9vqdvakp61t8imm4nk38t5pp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.balarunta",
+            "certificate_hash": "4ccf15245dbf47cd601d8f87e425430cd353ec00"
+          }
+        },
+        {
+          "client_id": "1069689751901-h3tju88kalcjf5657q1hm8mi6jagi44c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWKZKlrQUP4Abx7z-xTL7fJi8NBrbg838"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069689751901-h3tju88kalcjf5657q1hm8mi6jagi44c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1069689751901-ge8o22qvhh09jf4k786ktjm4ijslc5iu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.LitterAlly.Balarunta"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

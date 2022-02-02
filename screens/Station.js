@@ -19,6 +19,7 @@ import {
   ScrollView,
 } from 'native-base';
 import Card from '../components/Card';
+import database from '@react-native-firebase/database';
 
 class Station extends Component {
   constructor(props) {
@@ -28,6 +29,12 @@ class Station extends Component {
     const profile_inactive = require('../assets/icon_profile_inactive.png');
     const station_inactive = require('../assets/icon_station_inactive.png');
     const qrscan = require('../assets/icon_qrcode.png');
+
+    database()
+      .ref('/Station/Location')
+      .on('value', snapshot => {
+        console.log('User data: ', snapshot.val());
+      });
     return (
       <NativeBaseProvider>
         <Box flex="1" safeArea bg="#f6f6f6">
@@ -48,10 +55,18 @@ class Station extends Component {
             }}>
             <Flex direction="row" flexWrap="wrap">
               <Flex w="50%">
-                <Card title="tset" />
+                <Card
+                  title="tset"
+                  size="full"
+                  link="https://firebasestorage.googleapis.com/v0/b/balarunta-v2.appspot.com/o/beehub.png?alt=media&token=40dcb24f-bbf8-4c69-9b55-c29605bd2b66"
+                />
               </Flex>
               <Flex w="50%">
-                <Card title="gaga" />
+                <Card
+                  title="gaga"
+                  size="full"
+                  link="https://firebasestorage.googleapis.com/v0/b/balarunta-v2.appspot.com/o/beehub.png?alt=media&token=40dcb24f-bbf8-4c69-9b55-c29605bd2b66"
+                />
               </Flex>
             </Flex>
           </ScrollView>

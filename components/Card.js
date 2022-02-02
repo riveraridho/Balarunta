@@ -11,11 +11,12 @@ import {
   Flex,
 } from 'native-base';
 
-const Card = ({title}) => {
+const Card = ({title, link, size, source}) => {
+  console.log(link);
   return (
     <Box alignItems="center">
       <Box
-        maxW="full"
+        maxW={size}
         rounded="lg"
         overflow="hidden"
         borderColor="coolGray.200"
@@ -32,10 +33,10 @@ const Card = ({title}) => {
           backgroundColor: 'gray.50',
         }}>
         <Box>
-          <AspectRatio w="100%" ratio={16 / 9}>
+          <AspectRatio w="100%" h="50%" ratio={16 / 10}>
             <Image
               source={{
-                uri: 'https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg',
+                uri: {link},
               }}
               alt="image"
             />
